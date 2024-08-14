@@ -1,0 +1,94 @@
+-----------------------------------------------------
+Followed this tutorial:
+https://www.youtube.com/playlist?list=PLdmlz6_BFbF4764pH35xVBT2R9ieYiX_A
+-----------------------------------------------------
+Project Name and Solution Name are different. A 'project' is contained in a 'solution'.
+-----------------------------------------------------
+> Created a Class Library named 'Villa.Entity'
+> Created a Class Library named 'Villa.DataAccess'.
+> Created a Class Library named 'Villa.Business'.
+> Created a Class Library named 'Villa.Dto'. (Data Transfer Object carries data between processes.)
+> Deleted the 'Class1' classes in each Class Library.
+
+> Created a new folder in 'Villa.Entity' named 'Entities'.
+
+> Created 'Villa.Entity/Entities/BaseEntity.cs'. (public class)
+> Added 'MongoDB.Bson' library to 'Villa.Entity'.
+-----------------------------------------------------
+"prop" + TAB to quickly add a property to a class.
+-----------------------------------------------------
+> Created 'Villa.Entity/Entities/Banner.cs'. (public class)
+> Created 'Villa.Entity/Entities/Feature.cs'. (public class)
+> Created 'Villa.Entity/Entities/Quest.cs'. (public class)
+> Created 'Villa.Entity/Entities/Video.cs'. (public class)
+> Created 'Villa.Entity/Entities/Counter.cs'. (public class)
+> Created 'Villa.Entity/Entities/Deal.cs'. (public class)
+> Created 'Villa.Entity/Entities/Product.cs'. (public class)
+> Created 'Villa.Entity/Entities/Contact.cs'. (public class)
+> Created 'Villa.Entity/Entities/Message.cs'. (public class)
+-----------------------------------------------------
+> Created a new folder in 'Villa.DataAccess' named 'Context'.
+> Created a new folder in 'Villa.DataAccess' named 'Abstract'.
+> Created a new folder in 'Villa.DataAccess' named 'Repositories'.
+> Created a new folder in 'Villa.DataAccess' named 'EntityFramework'.
+
+> Created 'Villa.DataAccess/Context/VillaContext.cs'. (public class)
+> Added 'Microsoft.EntityFrameworkCore' library to 'Villa.DataAccess'.
+> Added 'MongoDB.EntityFrameworkCore' library to 'Villa.DataAccess'.
+> Added 'Villa.Entity' project reference to 'Villa.DataAccess'.
+-----------------------------------------------------
+"ctor" + TAB to quickly add a constructor to a class.
+-----------------------------------------------------
+> Added "ConnectionStrings" to 'appsettings.json'.
+> Added "DatabaseName" to 'appsettings.json'.
+
+> Added 'Villa.DataAccess' project reference to 'Villa.WebUI'.
+-----------------------------------------------------
+> Set up MongoDB in 'Program.cs'
+-----------------------------------------------------
+> Created 'Villa.DataAccess/Abstract/IGenericDal.cs'. (public interface)
+
+> Created 'Villa.DataAccess/Repositories/GenericRepository.cs'. (public class)
+-----------------------------------------------------
+CTRL + '.' to get help and generate constructors
+-----------------------------------------------------
+> Created 'Villa.DataAccess/Abstract/IBannerDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IContactDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/ICounterDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IDealDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IFeatureDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IMessageDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IProductDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IQuestDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/IVideoDal.cs'. (public interface)
+-----------------------------------------------------
+> Created 'Villa.DataAccess/EntityFramework/EFBannerDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFContactDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFCounterDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFDealDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFFeatureDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFMessageDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFProductDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFQuestDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFVideoDal.cs'. (public class)
+-----------------------------------------------------
+> Created a new folder in 'Villa.Business' named 'Abstract'.
+> Created a new folder in 'Villa.Business' named 'Concrete'.
+
+> Created 'Villa.Business/Abstract/IGenericService.cs'. (public interface)
+> Added 'MongoDB.Bson' library to 'Villa.Business'.
+> Added 'Villa.Entity' project reference to 'Villa.Business'.
+
+> Created 'Villa.Business/Abstract/IBannerService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IContactService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/ICounterService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IDealService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IFeatureService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IMessageService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IProductService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IQuestService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/IVideoService.cs'. (public interface)
+-----------------------------------------------------
+> Added 'Villa.DataAccess' project reference to 'Villa.Business'.
+> Created 'Villa.Business/Concrete/BannerManager.cs'. (public interface)
+-----------------------------------------------------
