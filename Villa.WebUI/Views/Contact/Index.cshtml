@@ -1,0 +1,33 @@
+﻿@model List<ResultContactDto>
+@{
+    ViewData["Title"] = "İletişim Bilgileri";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-hover table-bordered">
+    @{
+        int count = 0;
+    }
+    <tr>
+        <th>#</th>
+        <th>Harita</th>
+        <th>Telefon</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <tn>@count</tn>
+            <td><a href="@item.MapUrl" target="_blank">Harita Linki</a></td>
+            <td>@item.Phone</td>
+            <td>@item.Email</td>
+            <td>
+                <a asp-asp-controller="Contact" asp-action="DeleteContact" asp-route-itemid="@item.Id" class="btn btn-outline-danger">Sil</a>
+                <a asp-asp-controller="Contact" asp-action="UpdateContact" asp-route-itemid="@item.Id" class="btn btn-outline-danger">Güncelle</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<a asp-asp-controller="Contact" asp-action="CreateContact" class="btn btn-outline-dark">Yeni İletişim Bilgisi Ekle</a>

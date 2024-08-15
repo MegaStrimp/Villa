@@ -90,5 +90,157 @@ CTRL + '.' to get help and generate constructors
 > Created 'Villa.Business/Abstract/IVideoService.cs'. (public interface)
 -----------------------------------------------------
 > Added 'Villa.DataAccess' project reference to 'Villa.Business'.
-> Created 'Villa.Business/Concrete/BannerManager.cs'. (public interface)
+> Created 'Villa.Business/Concrete/GenericManager.cs'. (public class)
+-----------------------------------------------------
+> Created 'Villa.Business/Concrete/BannerManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/ContactManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/CounterManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/DealManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/FeatureManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/MessageManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/ProductManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/QuestManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/VideoManager.cs'. (public class)
+-----------------------------------------------------
+> Created a new folder in 'Villa.WebUI' named 'Extensions'.
+> Added 'Villa.Business' project reference to 'Villa.WebUI'.
+> Added DALs & Services to 'Program.cs' via a separate script. (Villa.WebUI/Extensions/ServiceExtensions.cs (public static class))
+-----------------------------------------------------
+> Added 'Focus 2' theme to 'wwwroot'.
+> Created 'Villa.WebUI.Views._AdminLayout.cshtml', copied 'Focus-2/layout-blank.html' to it, and edited the references.
+> Deleted "card-header" and "card-footer" from 'Villa.WebUI.Views._AdminLayout.cshtml', then added 'RenderBody()' to "card-body".
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/BannerController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos' named 'Dtos'.
+> Created a new folder in 'Villa.Dtos/Dtos' named 'BannerDtos'.
+> Added 'MongoDB.Bson' library to 'Villa.Dto'.
+
+> Created 'Villa.Dto/Dtos/BannerDtos/ResultBannerDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/BannerDtos/CreateBannerDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/BannerDtos/UpdateBannerDto.cs'. (public class)
+
+> Added 'AutoMapper' library to 'Villa.WebUI'.
+> Created a new folder in 'Villa.WebUI' named 'Mapping'.
+> Added 'Villa.Dto' project reference to 'Villa.WebUI'.
+> Added 'Villa.Entity' project reference to 'Villa.WebUI'.
+> Created 'Villa.WebUI/Mapping/GeneralMapping.cs'. (public class)
+
+> Set up AutoMapper to 'Program.cs'.
+-----------------------------------------------------
+To add a scaffolded view connected with an index function, right click 'Index()' in a controller class, choose 'Add View', and don't forget to select a layout if you're using one.
+-----------------------------------------------------
+> Scaffolded 'Villa.WebUI/Views/Banner/Index.cshtml'.
+> Added '@using Villa.Dto.Dtos.BannerDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+> Edited "welcome-text" in 'Villa.WebUI/Views/Banner/Index.cshtml'.
+> Deleted "breadcrumb" in 'Villa.WebUI/Views/Banner/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Banner/CreateBanner.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Banner/UpdateBanner.cshtml'.
+-----------------------------------------------------
+> Split 'Villa.WebUI.Views._AdminLayout.cshtml' to ViewComponents.
+> Created a new folder in 'Villa.WebUI' named 'ViewComponents'.
+> Created a new folder in 'Villa.WebUI/ViewComponents' named 'AdminLayout'.
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminHead.cs'. (public class)
+
+> Created a new folder in 'Villa.WebUI/Views/Shared' named 'Components'.
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminHead'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminHead/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminPreloader.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminPreloader'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminPreloader/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminLogo.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminLogo'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminLogo/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminNavbar.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminNavbar'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminNavbar/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminSidebar.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminSidebar'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminSidebar/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminFooter.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminFooter'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminFooter/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/AdminLayout/_AdminScripts.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_AdminScripts'.
+> Created 'Villa.WebUI/Views/Shared/Components/_AdminScripts/Default.cshtml. (partial view)
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/ContactController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'ContactDtos'.
+
+> Created 'Villa.Dto/Dtos/ContactDtos/ResultContactDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/ContactDtos/CreateContactDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/ContactDtos/UpdateContactDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.ContactDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/CounterController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'CounterDtos'.
+
+> Created 'Villa.Dto/Dtos/CounterDtos/ResultCounterDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/CounterDtos/CreateCounterDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/CounterDtos/UpdateCounterDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.CounterDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/DealController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'DealDtos'.
+
+> Created 'Villa.Dto/Dtos/DealDtos/ResultDealDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/DealDtos/CreateDealDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/DealDtos/UpdateDealDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.DealDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/FeatureController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'FeatureDtos'.
+
+> Created 'Villa.Dto/Dtos/FeatureDtos/ResultFeatureDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/FeatureDtos/CreateFeatureDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/FeatureDtos/UpdateFeatureDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.FeatureDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/MessageController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'MessageDtos'.
+
+> Created 'Villa.Dto/Dtos/MessageDtos/ResultMessageDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/MessageDtos/CreateMessageDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/MessageDtos/UpdateMessageDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.MessageDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/ProductController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'ProductDtos'.
+
+> Created 'Villa.Dto/Dtos/ProductDtos/ResultProductDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/ProductDtos/CreateProductDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/ProductDtos/UpdateProductDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.ProductDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/QuestController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'QuestDtos'.
+
+> Created 'Villa.Dto/Dtos/QuestDtos/ResultQuestDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/QuestDtos/CreateQuestDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/QuestDtos/UpdateQuestDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.QuestDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/VideoController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'VideoDtos'.
+
+> Created 'Villa.Dto/Dtos/VideoDtos/ResultVideoDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/VideoDtos/CreateVideoDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/VideoDtos/UpdateVideoDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.VideoDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
+> Added 'Focus 2' theme to 'wwwroot'.
 -----------------------------------------------------
