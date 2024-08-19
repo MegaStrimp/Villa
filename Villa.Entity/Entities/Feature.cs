@@ -8,7 +8,7 @@ namespace Villa.Entity.Entities
 {
     public class Feature : BaseEntity
     {
-        public string Image { get; set; }
+        public string ImageUrl { get; set; }
         
         public string Title { get; set; }
 

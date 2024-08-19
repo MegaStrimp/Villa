@@ -244,3 +244,46 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 -----------------------------------------------------
 > Added 'Focus 2' theme to 'wwwroot'.
 -----------------------------------------------------
+> Scaffolded 'Villa.WebUI/Views/Banner/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Banner/CreateBanner.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Banner/UpdateBanner.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Contact/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Contact/CreateContact.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Contact/UpdateContact.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Counter/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Counter/CreateCounter.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Counter/UpdateCounter.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Deal/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Deal/CreateDeal.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Deal/UpdateDeal.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Feature/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Feature/CreateFeature.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Feature/UpdateFeature.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Message/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Message/CreateMessage.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Message/MessageDetails.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Product/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Product/CreateProduct.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Product/UpdateProduct.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Product/ProductDetails.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Quest/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Quest/CreateQuest.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Quest/UpdateQuest.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/Video/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Video/CreateVideo.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Video/UpdateVideo.cshtml'.
+-----------------------------------------------------
+> Added 'FluentValidation' library to 'Villa.Business'.
+> Added 'FluentValidation.DependencyInjectionExtensions' library to 'Villa.WebUI'.
+> Set up FluentValidation in 'Program.cs'
+
+> Created a new folder in 'Villa.Business' named 'Validators'.
+> Created 'Villa.Business/Validators/QuestionValidator.cs'. (public class)

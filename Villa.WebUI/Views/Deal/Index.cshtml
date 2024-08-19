@@ -28,14 +28,14 @@
             <td>@item.Type</td>
             <td>@item.ImageUrl</td>
             <td>@item.Title</td>
-            <td>@item.Description</td>
+            <td>@(item.Description.Length > 50 ? item.Description.Substring(0,50) + "..." : item.Description)</td>
             <td>@item.Square</td>
             <td>@item.Floor</td>
-            <td>@item.HasParkingArea</td>
+            <td>@(item.HasParkingArea ? "Var" : "Yok")</td>
             <td>@item.PaymentType</td>
             <td>
-                <button onclick="deleteDeal(@item.Id)" class="btn btn-outline-danger">Sil</button>
-                <a asp-asp-controller="Deal" asp-action="UpdateDeal" asp-route-itemid="@item.Id" class="btn btn-outline-danger">Güncelle</a>
+                <button onclick="deleteDeal(this)" id="@item.Id" class="btn btn-outline-danger">Sil</button>
+                <a asp-asp-controller="Deal" asp-action="UpdateDeal" asp-route-itemid="@item.Id" class="btn btn-outline-info">Güncelle</a>
             </td>
         </tr>
     }
@@ -43,8 +43,10 @@
 
 <a asp-asp-controller="Deal" asp-action="CreateDeal" class="btn btn-outline-dark">Yeni Teklif Ekle</a>
 <script>
-    function deleteDeal(id)
+    function deleteDeal(button)
     {
+        var id = button.getAttribute("id");
+
         Swal.fire({
             title: "Silmek istediğinize emin misiniz?",
             text: "Bu işlemi geri alamazsınız!",
@@ -59,5 +61,5 @@
                 window.location.href = "/Deal/DeleteDeal/" + id;
             }
         });
-    }
+    };
 </script>

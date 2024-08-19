@@ -1,3 +1,4 @@
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 using System.Reflection;
@@ -24,6 +25,9 @@ builder.Services.AddServiceExtensions();
 
 // Add AutoMapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+// Add Fluent Validator
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 // Add other services to the container.
 builder.Services.AddControllersWithViews();

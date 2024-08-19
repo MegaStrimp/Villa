@@ -44,19 +44,11 @@ namespace Villa.WebUI.Controllers
             return RedirectToAction("index");
         }
 
-        public async Task<IActionResult> UpdateMessage(ObjectId id)
+        public async Task<IActionResult> MessageDetails(ObjectId id)
         {
             var value = await _messageService.TGetByIdAsync(id);
-            var message = _mapper.Map<UpdateMessageDto>(value);
+            var message = _mapper.Map<ResultMessageDto>(value);
             return View(message);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> UpdateMessage(UpdateMessageDto updateMessageDto)
-        {
-            var message = _mapper.Map<Message>(updateMessageDto);
-            await _messageService.TUpdateAsync(message);
-            return RedirectToAction("index");
         }
     }
 }

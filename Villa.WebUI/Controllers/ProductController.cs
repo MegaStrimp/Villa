@@ -58,5 +58,12 @@ namespace Villa.WebUI.Controllers
             await _productService.TUpdateAsync(product);
             return RedirectToAction("index");
         }
+
+        public async Task<IActionResult> ProductDetails(ObjectId id)
+        {
+            var value = await _productService.TGetByIdAsync(id);
+            var product = _mapper.Map<ResultProductDto>(value);
+            return View(product);
+        }
     }
 }
