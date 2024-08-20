@@ -31,8 +31,10 @@ namespace Villa.DataAccess.Context
         public DbSet<Product> Products { get; set; }
         
         public DbSet<Quest> Quests { get; set; }
-        
+
         public DbSet<Video> Videos { get; set; }
+
+        public DbSet<SubHeader> SubHeaders { get; set; }
 
         // Create the model (structure of the database) using ModelBuilder object
         protected override void OnModelCreating(ModelBuilder modelBuilder)

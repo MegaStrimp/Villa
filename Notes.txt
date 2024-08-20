@@ -26,6 +26,7 @@ Project Name and Solution Name are different. A 'project' is contained in a 'sol
 > Created 'Villa.Entity/Entities/Product.cs'. (public class)
 > Created 'Villa.Entity/Entities/Contact.cs'. (public class)
 > Created 'Villa.Entity/Entities/Message.cs'. (public class)
+> Created 'Villa.Entity/Entities/SubHeader.cs'. (public class)
 -----------------------------------------------------
 > Created a new folder in 'Villa.DataAccess' named 'Context'.
 > Created a new folder in 'Villa.DataAccess' named 'Abstract'.
@@ -61,6 +62,7 @@ CTRL + '.' to get help and generate constructors
 > Created 'Villa.DataAccess/Abstract/IProductDal.cs'. (public interface)
 > Created 'Villa.DataAccess/Abstract/IQuestDal.cs'. (public interface)
 > Created 'Villa.DataAccess/Abstract/IVideoDal.cs'. (public interface)
+> Created 'Villa.DataAccess/Abstract/ISubHeaderDal.cs'. (public interface)
 -----------------------------------------------------
 > Created 'Villa.DataAccess/EntityFramework/EFBannerDal.cs'. (public class)
 > Created 'Villa.DataAccess/EntityFramework/EFContactDal.cs'. (public class)
@@ -71,6 +73,7 @@ CTRL + '.' to get help and generate constructors
 > Created 'Villa.DataAccess/EntityFramework/EFProductDal.cs'. (public class)
 > Created 'Villa.DataAccess/EntityFramework/EFQuestDal.cs'. (public class)
 > Created 'Villa.DataAccess/EntityFramework/EFVideoDal.cs'. (public class)
+> Created 'Villa.DataAccess/EntityFramework/EFSubHeaderDal.cs'. (public class)
 -----------------------------------------------------
 > Created a new folder in 'Villa.Business' named 'Abstract'.
 > Created a new folder in 'Villa.Business' named 'Concrete'.
@@ -88,6 +91,7 @@ CTRL + '.' to get help and generate constructors
 > Created 'Villa.Business/Abstract/IProductService.cs'. (public interface)
 > Created 'Villa.Business/Abstract/IQuestService.cs'. (public interface)
 > Created 'Villa.Business/Abstract/IVideoService.cs'. (public interface)
+> Created 'Villa.Business/Abstract/ISubHeaderService.cs'. (public interface)
 -----------------------------------------------------
 > Added 'Villa.DataAccess' project reference to 'Villa.Business'.
 > Created 'Villa.Business/Concrete/GenericManager.cs'. (public class)
@@ -101,6 +105,7 @@ CTRL + '.' to get help and generate constructors
 > Created 'Villa.Business/Concrete/ProductManager.cs'. (public class)
 > Created 'Villa.Business/Concrete/QuestManager.cs'. (public class)
 > Created 'Villa.Business/Concrete/VideoManager.cs'. (public class)
+> Created 'Villa.Business/Concrete/SubHeaderManager.cs'. (public class)
 -----------------------------------------------------
 > Created a new folder in 'Villa.WebUI' named 'Extensions'.
 > Added 'Villa.Business' project reference to 'Villa.WebUI'.
@@ -242,6 +247,15 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 > Created 'Villa.Dto/Dtos/VideoDtos/UpdateVideoDto.cs'. (public class)
 > Added '@using Villa.Dto.Dtos.VideoDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
 -----------------------------------------------------
+> Created 'Villa.WebUI/Controllers/SubHeaderController.cs'. (public class)
+
+> Created a new folder in 'Villa.Dtos/Dtos' named 'SubHeaderDtos'.
+
+> Created 'Villa.Dto/Dtos/SubHeaderDtos/ResultSubHeaderDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/SubHeaderDtos/CreateSubHeaderDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/SubHeaderDtos/UpdateSubHeaderDto.cs'. (public class)
+> Added '@using Villa.Dto.Dtos.SubHeaderDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
+-----------------------------------------------------
 > Added 'Focus 2' theme to 'wwwroot'.
 -----------------------------------------------------
 > Scaffolded 'Villa.WebUI/Views/Banner/Index.cshtml'.
@@ -280,6 +294,10 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 > Scaffolded 'Villa.WebUI/Views/Video/Index.cshtml'.
 > Scaffolded 'Villa.WebUI/Views/Video/CreateVideo.cshtml'.
 > Scaffolded 'Villa.WebUI/Views/Video/UpdateVideo.cshtml'.
+
+> Scaffolded 'Villa.WebUI/Views/SubHeader/Index.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/SubHeader/CreateSubHeader.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/SubHeader/UpdateSubHeader.cshtml'.
 -----------------------------------------------------
 > Added 'FluentValidation' library to 'Villa.Business'.
 > Added 'FluentValidation.DependencyInjectionExtensions' library to 'Villa.WebUI'.
@@ -287,3 +305,49 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 
 > Created a new folder in 'Villa.Business' named 'Validators'.
 > Created 'Villa.Business/Validators/QuestionValidator.cs'. (public class)
+-----------------------------------------------------
+> Created 'Villa.WebUI.Views._UILayout.cshtml', copied 'VillaAgency-1.0.0/index.html' to it, and edited the references.
+
+> Created 'Villa.WebUI/Controllers/DefaultController.cs'. (public class)
+-----------------------------------------------------
+> Created a new folder in 'Villa.WebUI/ViewComponents' named 'Default-Index'.
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultBanner.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultBanner'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultBanner/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultFeature.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultFeature'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultFeature/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultQuest.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultQuest'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultQuest/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultVideo.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultVideo'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultVideo/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultCounter.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultCounter'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultCounter/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultDeal.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultDeal'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultDeal/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultProduct.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultProduct'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultProduct/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultContact.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultContact'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultContact/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultMessage.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultMessage'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultMessage/Default.cshtml. (partial view)
+
+> Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultSubHeader.cs'. (public class)
+> Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultSubHeader'.
+> Created 'Villa.WebUI/Views/Shared/Components/_DefaultSubHeader/Default.cshtml. (partial view)
+-----------------------------------------------------
