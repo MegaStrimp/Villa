@@ -45,7 +45,7 @@ Project Name and Solution Name are different. A 'project' is contained in a 'sol
 
 > Added 'Villa.DataAccess' project reference to 'Villa.WebUI'.
 -----------------------------------------------------
-> Set up MongoDB in 'Program.cs'
+> Set up MongoDB in 'Program.cs'.
 -----------------------------------------------------
 > Created 'Villa.DataAccess/Abstract/IGenericDal.cs'. (public interface)
 
@@ -256,7 +256,7 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 > Created 'Villa.Dto/Dtos/SubHeaderDtos/UpdateSubHeaderDto.cs'. (public class)
 > Added '@using Villa.Dto.Dtos.SubHeaderDtos' to 'Villa.WebUI/Views/ViewImports.cshtml'.
 -----------------------------------------------------
-> Added 'Focus 2' theme to 'wwwroot'.
+> Added 'Villa Agency' theme to 'wwwroot'.
 -----------------------------------------------------
 > Scaffolded 'Villa.WebUI/Views/Banner/Index.cshtml'.
 > Scaffolded 'Villa.WebUI/Views/Banner/CreateBanner.cshtml'.
@@ -301,7 +301,7 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 -----------------------------------------------------
 > Added 'FluentValidation' library to 'Villa.Business'.
 > Added 'FluentValidation.DependencyInjectionExtensions' library to 'Villa.WebUI'.
-> Set up FluentValidation in 'Program.cs'
+> Set up FluentValidation in 'Program.cs'.
 
 > Created a new folder in 'Villa.Business' named 'Validators'.
 > Created 'Villa.Business/Validators/QuestionValidator.cs'. (public class)
@@ -350,4 +350,25 @@ To add a scaffolded view connected with an index function, right click 'Index()'
 > Created 'Villa.WebUI/ViewComponents/Default-Index/_DefaultSubHeader.cs'. (public class)
 > Created a new folder in 'Villa.WebUI/Views/Shared/Components' named '_DefaultSubHeader'.
 > Created 'Villa.WebUI/Views/Shared/Components/_DefaultSubHeader/Default.cshtml. (partial view)
+-----------------------------------------------------
+> Added 'Microsoft.Extensions.Identity' library to 'Villa.WebUI'.
+> Added 'Microsoft.AspNetCore.Identity.EntityFrameworkCore' library to 'Villa.DataAccess'.
+> Added 'Microsoft.AspNetCore.Identity.EntityFrameworkCore' library to 'Villa.Entity'.
+
+> Created 'Villa.Entity/Entities/AppUser.cs'. (public class)
+> Created 'Villa.Entity/Entities/AppRole.cs'. (public class)
+> Created 'Villa.Entity/Entities/UserLogin.cs'. (public class)
+
+> Set up Identity in 'Program.cs'.
+-----------------------------------------------------
+> Added 'Colorlib Regform' theme to 'wwwroot'.
+-----------------------------------------------------
+> Created a new folder in 'Villa.Dtos/Dtos' named 'IdentityDtos'.
+> Created 'Villa.Dto/Dtos/IdentityDtos/RegisterDto.cs'. (public class)
+> Created 'Villa.Dto/Dtos/IdentityDtos/LoginDto.cs'. (public class)
+
+> Scaffolded 'Villa.WebUI/Views/Account/Register.cshtml'.
+> Scaffolded 'Villa.WebUI/Views/Account/Login.cshtml'.
+-----------------------------------------------------
+> Changed the starting page to '/Default/Index' from 'Program.cs'.
 -----------------------------------------------------

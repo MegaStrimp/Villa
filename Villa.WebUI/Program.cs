@@ -1,5 +1,6 @@
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Reflection;
 using Villa.Business.Abstract;
@@ -8,6 +9,7 @@ using Villa.DataAccess.Abstract;
 using Villa.DataAccess.Context;
 using Villa.DataAccess.EntityFramework;
 using Villa.DataAccess.Repositories;
+using Villa.Entity.Entities;
 using Villa.WebUI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +27,9 @@ builder.Services.AddServiceExtensions();
 
 // Add AutoMapper
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+// Add Identity
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<VillaContext>();
 
 // Add Fluent Validator
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
@@ -51,6 +56,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();
