@@ -15,6 +15,24 @@ Project Name and Solution Name are different. A 'project' is contained in a 'sol
 > Created 'Villa.Entity/Entities/BaseEntity.cs'. (public class)
 > Added 'MongoDB.Bson' library to 'Villa.Entity'.
 -----------------------------------------------------
+Terminology;
+* Interface - Handles signatures of functions/methods. Every class referencing them should provide concrete implementations to their methods.
+* Abstract - Contains interfaces.
+* Concrete - Contains classes that implement the methods within interfaces.
+
+* Business - Contains the logic and rules that govern the application's functionality.
+	* Abstract - Interfaces defining business operations.
+	* Concrete - Implementations of business logic.
+	* Validators - Classes for validating business rules.
+* Data Access - Handles data operations, including retrieval, storage, and management of the application's data.
+	* Abstract - Interfaces for data operations.
+	* Context - DbContext class managing database interactions.
+	* Entity Framework - Configuration and mapping for Entity Framework.
+	* Repositories - Implementations for accessing data.
+* Dto - Data Transfer Objects. Handles the objects that are used to transfer data between layers of the application.
+* Entity - Contains the entity classes that represent the application's data model.
+* WebUI - Entry point for the application.
+-----------------------------------------------------
 "prop" + TAB to quickly add a property to a class.
 -----------------------------------------------------
 > Created 'Villa.Entity/Entities/Banner.cs'. (public class)
